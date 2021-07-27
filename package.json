@@ -1,6 +1,6 @@
 {
-  "name": "hexo-bilibili-bangumi",
-  "version": "1.5.4",
+  "name": "hexo-bilibili-bangumi-plus",
+  "version": "1.0.0",
   "description": "hexo bilibili番剧页",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "build": "babel src/index.js --out-file index.js && babel src/lib/util.js --out-file lib/util.js && babel src/lib/bangumi-generator.js --out-file lib/bangumi-generator.js && babel src/lib/templates/index.js --out-file lib/templates/index.js --presets minify && babel src/lib/templates/pagination.js --out-file lib/templates/pagination.js --presets minify && cleancss src/lib/templates/index.css -O2 -o lib/templates/index.css",
     "ejslint": "ejslint lib/templates/*.ejs"
   },
-  "author": "HCLonely <h1606051253@gmail.com>",
-  "license": "Apache Licence 2.0",
+  "author": "hotarugali <hotarugali@163.com>",
+  "license": "Apache-2.0",
   "keywords": [
     "generator",
     "plugin",
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HCLonely/hexo-bilibili-bangumi.git"
+    "url": "git+https://github.com/hotarugali/hexo-bilibili-bangumi-plus.git"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -46,5 +46,12 @@
       "index.js",
       "lib/*"
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/hotarugali/hexo-bilibili-bangumi-plus/issues"
+  },
+  "homepage": "https://github.com/hotarugali/hexo-bilibili-bangumi-plus#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
